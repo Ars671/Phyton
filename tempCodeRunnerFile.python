@@ -1,0 +1,25 @@
+y = int(input("Введите количество операций: "))
+first = int(input("Введите первое число: "))
+i = 1
+while i < y:
+   e = int(input("Введите операцию: "))
+   if e =="+":
+    second = int(input("Введите число: "))
+    first + second
+    print(f"Результат {first}")
+   elif e=="-":
+    second = int(input("Введите число: "))
+    first - second
+    print(f"Результат {first}")
+   elif e=="*":
+    second = int(input("Введите число: "))
+    first * second
+    print(f"Результат {first}")
+   elif e=="/":
+    second = int(input("Введите число: "))
+    if second == 0 :
+        print("Ошибка")
+    else:
+        first / second
+        print(f"Результат {first}")
+    i+=1
